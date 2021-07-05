@@ -26,10 +26,10 @@ function! AngleBracket()
     normal! i<>
 endfunction
 
-inoremap ( :call SmallBracket()<CR>i
-inoremap { :call CurlyBracket()<CR>i
-inoremap [ :call LargeBracket()<CR>i
-inoremap ` :call Backticks()<CR>i
-inoremap ' :call SingleQuote()<CR>i
-inoremap " :call DoubleQuote()<CR>i
-inoremap < :call AngleBracket()<CR>i
+inoremap ( <Esc>:call SmallBracket()<CR>i
+inoremap { <Esc>:call CurlyBracket()<CR>i
+inoremap [ <Esc>:call LargeBracket()<CR>i
+inoremap ` <Esc>:call Backticks()<CR>i
+inoremap ' <Esc>:call SingleQuote()<CR>i
+inoremap " <Esc>:call DoubleQuote()<CR>i
+inoremap < <Esc>:call AngleBracket()<CR>i
