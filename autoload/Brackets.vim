@@ -1,8 +1,8 @@
 " -----------------------------------------------------------------------------
 " File: Brackets.vim
 " Description: It completes the brackets.
-" Author: vivek
-" Source: https://github.com/vivek80801/complete-brackets
+" Author: vivek80801
+" Source: https://github.com/vivek80801/Brackets
 " -----------------------------------------------------------------------------
 "
 if exists("g:loaded_Brackets") 
@@ -14,31 +14,31 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! Brackets#SmallBracket()
-    normal! i()
+    normal! a()
 endfunction
 
 function! Brackets#CurlyBracket()
-    normal! i{}
+    normal! a{}
 endfunction
 
 function! Brackets#LargeBracket()
-    normal! i[]
+    normal! a[]
 endfunction
 
 function! Brackets#Backticks()
-    normal! i``
+    normal! a``
 endfunction
 
 function! Brackets#SingleQuote()
-    normal! i''
+    normal! a''
 endfunction
 
 function! Brackets#DoubleQuote()
-    normal! i""
+    normal! a""
 endfunction
 
 function! Brackets#AngleBracket()
-    normal! i<>
+    normal! a<>
 endfunction
 
 let &cpo = s:save_cpo
