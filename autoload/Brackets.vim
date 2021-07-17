@@ -9,7 +9,7 @@ if exists("g:loaded_Brackets")
   finish
 endif
 
-let g:loaded_Bracktes= 0.1 " your version number
+let g:loaded_Bracktes= 0.0.001
 let s:save_cpo = &cpo
 set cpo&vim
 
