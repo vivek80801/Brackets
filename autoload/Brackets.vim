@@ -14,31 +14,31 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 function! Brackets#SmallBracket()
-    normal! a()
+    normal! ai()
 endfunction
 
 function! Brackets#CurlyBracket()
-    normal! a{}
+    normal! ai{}
 endfunction
 
 function! Brackets#LargeBracket()
-    normal! a[]
+    normal! ai[]
 endfunction
 
 function! Brackets#Backticks()
-    normal! a``
+    normal! ai``
 endfunction
 
 function! Brackets#SingleQuote()
-    normal! a''
+    normal! ai''
 endfunction
 
 function! Brackets#DoubleQuote()
-    normal! a""
+    normal! ai""
 endfunction
 
 function! Brackets#AngleBracket()
-    normal! a<>
+    normal! ai<>
 endfunction
 
 let &cpo = s:save_cpo
