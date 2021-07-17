@@ -1,43 +1,45 @@
 " -----------------------------------------------------------------------------
-" File: complete-brackets.vim
+" File: Brackets.vim
 " Description: It completes the brackets.
 " Author: vivek
 " Source: https://github.com/vivek80801/complete-brackets
 " -----------------------------------------------------------------------------
 "
-if exists("g:loaded_complete-brackets") || &cp
+if exists("g:loaded_Brackets") 
   finish
 endif
 
-let g:loaded_YourAppName= 0.1 " your version number
-let s:keepcpo           = &cpo
+let g:loaded_Bracktes= 0.1 " your version number
+let s:save_cpo = &cpo
 set cpo&vim
 
-function! SmallBracket()
+function! Brackets#SmallBracket()
     normal! i()
 endfunction
 
-function! CurlyBracket()
+function! Brackets#CurlyBracket()
     normal! i{}
 endfunction
 
-function! LargeBracket()
+function! Brackets#LargeBracket()
     normal! i[]
 endfunction
 
-function! Backticks()
+function! Brackets#Backticks()
     normal! i``
 endfunction
 
-function! SingleQuote()
+function! Brackets#SingleQuote()
     normal! i''
 endfunction
 
-function! DoubleQuote()
+function! Brackets#DoubleQuote()
     normal! i""
 endfunction
 
-function! AngleBracket()
+function! Brackets#AngleBracket()
     normal! i<>
 endfunction
 
+let &cpo = s:save_cpo
+unlet s:save_cpo
